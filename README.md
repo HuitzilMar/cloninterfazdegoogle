@@ -3,9 +3,9 @@
 ##  indice 
 
 
-* [🌜1. Intro](https://github.com/HuitzilMar/clon.interfaz.google#1-intro)
-* [🌜2. Qué construí❓](https://github.com/HuitzilMar/clon.interfaz.google/edit/main/README.md#2-qu%C3%A9-contru%C3%AD)
-* [🌜3. Objetivo del proyecto](https://github.com/HuitzilMar/clon.interfaz.google/edit/main/README.md#3-objetivo-del-proyeto)
+* [🌜1. Intro](https://github.com/HuitzilMar/cloninterfazdegoogle#1-intro)
+* [🌜2. Qué construí❓](https://github.com/HuitzilMar/cloninterfazdegoogle#2-qu%C3%A9-contru%C3%AD)
+* [🌜3. Objetivo del proyecto](https://github.com/HuitzilMar/cloninterfazdegoogle#3-objetivo-del-proyeto)
 
 ****
 
