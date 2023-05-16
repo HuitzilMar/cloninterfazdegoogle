@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://i.pinimg.com/736x/5e/14/2c/5e142cd2b9527b6356dc042080236a1e.jpg");
+    /*background-repeat: no-repeat;*/
+}
+
+header{
+    width: 100%;
+    height: 60px;
+}
+/*acomodarse a la pantalla a la derecha*/
+header nav{
+    display: flex; /*se acomoda de acuerdo al tamaño de la pantalla*/
+    justify-content: flex-end;/*lo pone al final de la barra e navegacion*/
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;/*lo ajusta a horizontal en la barra de navegacion*/
+    list-style: none;/*quita las viñetas*/
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;/*quita las rayas de las palbras en hipervinculo*/
+    cursor: pointer;
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;/*palabras se separen y no esten juntas*/
+    color: rgb(230, 18, 64);
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url("https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png");/*insertar imagenes desde internet en CSS*/
+    width: 27px;
+    height: 27px;
+    background-size: contain;/*el espacio apartado para ese icono*/
+    background-position: center;
+    background-repeat: no-repeat;/*no se repite la imagen en varias secciones*/
+}
+/*circulo a la imagen*/
+nav .nav-right-section img{
+    border-radius: 80px;
+    margin-left: 15px;
+    width: 35px;
+    height: 35px;
+}
+/*Logo de Google*/
+main{
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+main .main-logo{
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+    width: 310px;
+    height: 110px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;/*para el margen del boton de la barra de busqueda*/
+}
+
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #11d372;/*la barra se ve mas amplia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #123cc7a6;
+}
+
+main .main-input input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;/*de esta forma no se refleja la linea gris de la barra de texto*/
+    background-color: #c71266b4;
+}
+/*efecto de resaltar la barra de busqeda, lo hace el hover, las sombras empiezan como las manecilas del reloj*/
+main .main-input-container:hover{
+    box-shadow: 0 3px 9px 0#e6e206de;/*da el color a la sombra de la barra de busqueda*/
+}
+/*para el icono de la lupa*/
+main .main-input .search-icon{
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    width: 18px;
+    height: 18px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*para el icono de la microfono*/
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    width: 18px;
+    height: 18px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*para el icono de la camara*/
+main .main-input .cam-icon{
+    background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU9EB56qp8B5qgt89OtkGpN86KFafBM7cBixk1nXOs7ukEVbJE");
+    width: 25px;
+    height: 25px;
+    padding-right: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*Botones de bajo de la barra de busqueda*/
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}/*esta linea pone en horizontal los botones*/
+
+main .main-buttons button{
+    height: 36px;
+    background-color: #389fe4;
+    border: 0;
+    font-size: 14px;
+    color: #191a1b;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-right: 12px;
+}
+
+main .main-buttons button:hover{
+    border: 1px solid #c4e438;/*borde cada que pase el cursor*/
+    box-shadow: 0 0.5px 1px 0 #c71266;/*color de la sombra*/
+    cursor: pointer;/*cambia de flecha a manita el cursor*/
+}
+
+footer{
+    width: 100%;/*Este a todo el ancho de la pagina*/
+    height: 50px;/*Altua y tamaño del footer*/
+    position: absolute;/*la posision no se mueve aun que se vea en un telefono, no es responsiva*/
+    bottom: 0;/*no se mueve el espacio*/
+    display: grid;/*ayuda a mover elementos y ordenarlos*/
+    grid-template-columns: 1fr 1fr;
+    align-items: center;/*Aliniacio dentro de la forma*/
+    font-size: 13px;
+    background-color: #389fe4;
+    border-top: 1px solid #b1d415;
+    
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;/*quita la numeracion de la lista*/
+    display: flex;
+    padding-left: 0;
+}
+
+.footer-left {
+    justify-self: left;
+}
+
+.footer-right {
+    justify-self: right;
+}
+
+footer ul li a{/*se esta llamando a todas las listas desordenadas dela seccion footer*/
+    margin: 10px;
+    color: #191a1b;
+}
